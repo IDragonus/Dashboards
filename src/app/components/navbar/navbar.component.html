@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+    <mat-icon type="button" mat-button (click)="drawer.toggle()">
+        menu
+    </mat-icon>
+</mat-toolbar>
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <p>Auto-resizing sidenav</p>
+        <!-- <button (click)="showFiller = !showFiller" mat-raised-button>
+            Toggle extra text
+        </button> -->
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+        <app-home></app-home>
+        <footer></footer>
+        <router-outlet></router-outlet>
+    </div>
+</mat-drawer-container>
