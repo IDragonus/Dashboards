@@ -1,0 +1,8 @@
+.example-header-image {
+    background-image: url('https://2.bp.blogspot.com/-hdaftqVwPe0/VLffgk0CAfI/AAAAAAAABss/fvIb7mhWAFI/s1600/Shen_OriginalSkin.jpg');
+    background-size: cover;
+}
+
+mat-card{
+    width: 85% !important;
+}
