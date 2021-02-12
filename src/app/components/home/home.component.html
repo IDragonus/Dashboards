@@ -1,24 +1,18 @@
-<div class="container p-0">
+<div class="contenedor">
     <div class="row">
-        <mat-card class="col-12 col-sm-6 col-md-2 my-3 mx-3" style="height: 30%;" *ngFor="let card of cards">
-            <img mat-card-image
-                src="https://2.bp.blogspot.com/-hdaftqVwPe0/VLffgk0CAfI/AAAAAAAABss/fvIb7mhWAFI/s1600/Shen_OriginalSkin.jpg"
-                alt="Photo of a Shiba Inu">
-            <mat-card-title class="text-center">
-                {{ card.title }}
-            </mat-card-title>
-            <mat-card-subtitle class="text-center">
-                {{ card.subtitle }}
-            </mat-card-subtitle>
-            <mat-card-content>
-                <p>
-                    {{ card.content }}
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-raised-button color="primary">LIKE</button>
-                <button mat-button>SHARE</button>
-            </mat-card-actions>
-        </mat-card>
+        <div class="col-12 col-sm-6 col-md-3 px-2 py-2" *ngFor="let card of cards">
+            <mat-card class="card-width">
+                <img mat-card-image src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_0.jpg"
+                    alt="Perfil Image" />
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title class="mb-0">{{ card.title }}</mat-card-title>
+                    <mat-card-subtitle class="mb-0 text-white">{{ card.subtitle }}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p class="mb-0">92 K Vistas | hace 2 horas</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
     </div>
 </div>
